@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled1/test.dart';
 
 // import 'result.dart';
+import 'demo.dart';
 import 'irrpage.dart';
 import 'loginpage.dart';
 import 'result.dart';
@@ -26,24 +27,24 @@ class _FirstLoginState extends State<FirstLogin> {
           title: Image.asset('assets/logo.png', height: 60,),
         ),
       body: GridView(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
       ),
       children: [
         
         Container(
-          margin: EdgeInsets.all(12),
+          margin: const EdgeInsets.all(12),
           color:const Color(0xFFFFA800),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              IconButton(onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context)=> const Calculation()));}, icon: Icon(Icons.calculate_outlined,size: 40,color:Colors.black)),
-              Text("Calculate Your Savings", style:TextStyle(color:Colors.black,fontSize: 17))
+              IconButton(onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context)=> const Calculation()));}, icon: const Icon(Icons.calculate_outlined,size: 40,color:Colors.black)),
+              const Text("Calculate Your Savings", style:TextStyle(color:Colors.black,fontSize: 17))
             ],
           ),
         ),
         Container(
-          margin: EdgeInsets.all(12),
+          margin: const EdgeInsets.all(12),
           color:const Color(0xFFFFA800),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -174,11 +175,9 @@ class _FirstLoginState extends State<FirstLogin> {
             ),
             ListTile(
               title: const Text('Contact Us',textAlign: TextAlign.center,style: TextStyle(fontSize: 25,color: Colors.white),),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
+              onTap: () {Navigator.push(context,
+                MaterialPageRoute(builder: (context)=>  MyHomePage())
+                );
               },
             ),
             SizedBox(height: 30),

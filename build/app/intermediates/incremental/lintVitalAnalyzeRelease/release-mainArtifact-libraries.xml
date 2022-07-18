@@ -4,6 +4,19 @@
       jars="D:\app\untitled1\build\app\intermediates\flutter\release\libs.jar"
       resolved="__local_aars__:D:\app\untitled1\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
   <library
+      name="D:\app\untitled1\android@@:url_launcher_android::release"
+      jars="D:\app\untitled1\build\url_launcher_android\.transforms\8583864f9d38a169d7369b9bde0df6ad\transformed\out\jars\classes.jar"
+      resolved="io.flutter.plugins.urllauncher:url_launcher_android:unspecified"
+      folder="D:\app\untitled1\build\url_launcher_android\.transforms\8583864f9d38a169d7369b9bde0df6ad\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="io.flutter:flutter_embedding_release:1.0.0-ffe7b86a1e5b5cb63c8385ae1adc759e372ee8f4@jar"
       jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\io.flutter\flutter_embedding_release\1.0.0-ffe7b86a1e5b5cb63c8385ae1adc759e372ee8f4\af992f146e37762b7c2dccd4906efa89e8ee0471\flutter_embedding_release-1.0.0-ffe7b86a1e5b5cb63c8385ae1adc759e372ee8f4.jar"
       resolved="io.flutter:flutter_embedding_release:1.0.0-ffe7b86a1e5b5cb63c8385ae1adc759e372ee8f4"/>
@@ -61,18 +74,6 @@
       name="io.flutter:x86_64_release:1.0.0-ffe7b86a1e5b5cb63c8385ae1adc759e372ee8f4@jar"
       jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\io.flutter\x86_64_release\1.0.0-ffe7b86a1e5b5cb63c8385ae1adc759e372ee8f4\28734fd9c2fb16914183634bd6e15b309138e84a\x86_64_release-1.0.0-ffe7b86a1e5b5cb63c8385ae1adc759e372ee8f4.jar"
       resolved="io.flutter:x86_64_release:1.0.0-ffe7b86a1e5b5cb63c8385ae1adc759e372ee8f4"/>
-  <library
-      name="org.jetbrains.kotlin:kotlin-stdlib:1.6.10@jar"
-      jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.6.10\b8af3fe6f1ca88526914929add63cf5e7c5049af\kotlin-stdlib-1.6.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.6.10"/>
-  <library
-      name="org.jetbrains:annotations:13.0@jar"
-      jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"
-      resolved="org.jetbrains:annotations:13.0"/>
-  <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10@jar"
-      jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.6.10\c118700e3a33c8a0d9adc920e9dec0831171925\kotlin-stdlib-common-1.6.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10"/>
   <library
       name="androidx.lifecycle:lifecycle-common-java8:2.2.0@jar"
       jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common-java8\2.2.0\cd3478503da69b1a7e0319bd2d1389943db9b364\lifecycle-common-java8-2.2.0.jar"
@@ -288,4 +289,16 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib:1.6.10@jar"
+      jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.6.10\b8af3fe6f1ca88526914929add63cf5e7c5049af\kotlin-stdlib-1.6.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.6.10"/>
+  <library
+      name="org.jetbrains:annotations:13.0@jar"
+      jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"
+      resolved="org.jetbrains:annotations:13.0"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10@jar"
+      jars="C:\Users\hp\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.6.10\c118700e3a33c8a0d9adc920e9dec0831171925\kotlin-stdlib-common-1.6.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10"/>
 </libraries>

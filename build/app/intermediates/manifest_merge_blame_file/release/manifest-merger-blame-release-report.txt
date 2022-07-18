@@ -71,18 +71,27 @@
 47            android:value="2" />
 47-->D:\app\untitled1\android\app\src\main\AndroidManifest.xml:32:13-30
 48
-49        <uses-library
-49-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-50            android:name="androidx.window.extensions"
-50-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-51            android:required="false" />
-51-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-52        <uses-library
-52-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-53            android:name="androidx.window.sidecar"
-53-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-54            android:required="false" />
-54-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-55    </application>
-56
-57</manifest>
+49        <activity
+49-->[:url_launcher_android] D:\app\untitled1\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+50            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+50-->[:url_launcher_android] D:\app\untitled1\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+51            android:exported="false"
+51-->[:url_launcher_android] D:\app\untitled1\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+52            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+52-->[:url_launcher_android] D:\app\untitled1\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+53
+54        <uses-library
+54-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+55            android:name="androidx.window.extensions"
+55-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+56            android:required="false" />
+56-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+57        <uses-library
+57-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+58            android:name="androidx.window.sidecar"
+58-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+59            android:required="false" />
+59-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+60    </application>
+61
+62</manifest>

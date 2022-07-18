@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/appdownloadlinkdilogboxpage.dart';
+import 'package:untitled1/platinumpackagepage.dart';
+import 'package:untitled1/schedulesitevisitpage.dart';
+import 'package:untitled1/sliverpackagepage.dart';
+import 'package:untitled1/uploadimagedilogboxpage.dart';
 
+import 'goldpackagepage.dart';
 import 'irrpage.dart';
 import 'loginpage.dart';
 //
@@ -7,6 +13,7 @@ import 'loginpage.dart';
 //   const Calculation({Key? key}) : super(key: key);
 //
 //
+enum SingingCharacter { platinum, gold,sliver }
 class Sitename extends StatefulWidget {
   const Sitename({Key? key}) : super(key: key);
 
@@ -17,6 +24,7 @@ class Sitename extends StatefulWidget {
 double _sliderDiscreteValue = 20;
 double _sliderDiscreteValue1 = 20;
 class _SitenameState extends State<Sitename> {
+  SingingCharacter? _character = null;
   bool visible = false;
   @override
   Widget build(BuildContext context) {
@@ -201,7 +209,7 @@ class _SitenameState extends State<Sitename> {
                       child: SizedBox(
                         width: 345,
                         child: Text(
-                          "Total cost (INR)                 : Rs. 400,000",
+                          "Total cost ₹                 : Rs. 400,000",
                           style: TextStyle(
                             color: Color(0xff010f2e),
                             fontSize: 18,
@@ -274,7 +282,7 @@ class _SitenameState extends State<Sitename> {
                             SizedBox(
                               width: 179,
                               child: Text(
-                                "Monthly saveing (INR)",
+                                "Monthly saveing ₹",
                                 style: TextStyle(
                                   color: Color(0xff010f2e),
                                   fontSize: 15,
@@ -427,7 +435,7 @@ class _SitenameState extends State<Sitename> {
                             SizedBox(
                               width: 177,
                               child: Text(
-                                "Monthly saved (INR)",
+                                "Monthly saved ₹",
                                 style: TextStyle(
                                   color: Color(0xff010f2e),
                                   fontSize: 15,
@@ -897,7 +905,9 @@ class _SitenameState extends State<Sitename> {
                               ),
                               child:  IconButton(
                                 icon: const Icon(Icons.volume_up,color:Color(0xFFF9BF00) ,),
-                                onPressed: () {},
+                                onPressed: () {
+                                  showDialog(context: context, builder: (BuildContext context) => CustomDialog());
+                                },
                                 iconSize: 40,
                               ),
                             ),
@@ -930,7 +940,7 @@ class _SitenameState extends State<Sitename> {
                               child:  IconButton(
                                 icon: const Icon(Icons.volume_up,color:Color(0xFFF9BF00) ,),
                                 iconSize: 40,
-                                onPressed: () {},
+                                onPressed: () { showDialog(context: context, builder: (BuildContext context) => CustomDialog1());},
                               ),
                             ),
                             Text("Upload Site\nRoof Details",style: TextStyle(color: Colors.black),)
@@ -962,10 +972,10 @@ class _SitenameState extends State<Sitename> {
                               child:  IconButton(
                                 icon: const Icon(Icons.volume_up,color:Color(0xFFF9BF00) ,),
                                 iconSize: 40,
-                                onPressed: () {},
+                                onPressed: () {showDialog(context: context, builder: (BuildContext context) => CustomDialog2());},
                               ),
                             ),
-                            Text("Schedule Site\nVisit\n(Rs.5000 INR)",style: TextStyle(color: Colors.black),)
+                            Text("Schedule Site\nVisit\n(Rs.5000 ₹)",style: TextStyle(color: Colors.black),)
 
                           ],
 
@@ -976,6 +986,7 @@ class _SitenameState extends State<Sitename> {
 
               ),
               SizedBox(height: 50,),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
@@ -985,148 +996,723 @@ class _SitenameState extends State<Sitename> {
                 ],
               ),
               SizedBox(height:30),
-              Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Stack(
-                        alignment: AlignmentDirectional.center,
-                        children:[
-
-                      Image.asset('assets/img.png',
-                        width: 347,
-                        height: 245,),
-                      Container(
-                          alignment: Alignment.center,
-                          child: Text(
-                            'Parameters',
-                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 50.0),
-                          )),
-                        ]
-                      ),
-
-                    ],
-                  ),
-              SizedBox(height:20),
-              Container(
-                width: 200,
-                height: 505,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border(top: BorderSide.none),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x19000000),
-                      blurRadius: 10,
-                      offset: Offset(0, 4),
-                    ),
-                  ],
-                  color: Colors.white,
-                ),
-                child:
-                Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
+              SizedBox(height: 700,
+              width: 1000,
+              child:ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
-                  Padding(
-                    padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
-                    child: Text('Total project executed till date'),
-                  ),
-                  const Divider(
-                    indent: 20,
-                    endIndent: 20,
-                    color: Colors.black,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
-                    child: Text('Size of biggest project  executed till date\n(In Kw)'),
-                  ),
-                  const Divider(
-                    indent: 20,
-                    endIndent: 20,
-                    color: Colors.black,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
-                    child: Text('Year in Business'),
-                  ),
-                  const Divider(
-                    indent: 20,
-                    endIndent: 20,
-                    color: Colors.black,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
-                    child: Text('MEDA Registered'),
-                  ),
-                  const Divider(
-                    indent: 20,
-                    endIndent: 20,
-                    color: Colors.black,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
-                    child: Row(
-                      children: [
-                        Text('Platinum Package'),
-                        SizedBox(width: 150),
-                        IconButton(
-                          icon: const Icon(Icons.question_mark,size: 20,),
-                          onPressed: () {},
+
+                  Container(
+                    width: 370,
+                    height: 505,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border(top: BorderSide.none),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0x19000000),
+                          blurRadius: 10,
+                          offset: Offset(0, 4),
                         ),
                       ],
-                    )
+                      color: Colors.white,
+                    ),
+                    child:
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 20,bottom:10,right: 20,top: 10 ),
+                          child:Container(
+                              width: 350,
+                              height: 200,
 
-                  ),
-                  const Divider(
-                    indent: 20,
-                    endIndent: 20,
-                    color: Colors.black,
-                  ),
-                  Padding(
-                      padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
-                      child: Row(
-                        children: [
-                          Text('Gold Package'),
-                          SizedBox(width: 175),
-                          IconButton(
-                            icon: const Icon(Icons.question_mark,size: 20,),
-                            onPressed: () {},
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(5), bottomLeft: Radius.circular(0), bottomRight: Radius.circular(5), ),
+                                border: Border.all(color: Color(0xffe5e5e5), width: 1, ),
+                                color: Color(0xfff9bf00),
+                              ),
+                              child:Center(
+                                child:Text(
+                                  "Parameters",
+
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 45,
+
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                )
+                              )
                           ),
-                        ],
-                      )
+                        ),
 
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text('Total project executed till date'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text('Size of biggest project  executed till date\n(In Kw)'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
+                          child: Text('Year in Business'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text('MEDA Registered'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                              children: [
+                                Text('Platinum Package'),
+                                SizedBox(width: 149),
+                                IconButton(
+                                  icon: const Icon(Icons.question_mark,size: 20,),
+                                  onPressed: () {
+                                    Navigator.push(context,
+                                        MaterialPageRoute(builder: (context)=>  Platinumpackagepage())
+                                    );
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                              children: [
+                                Text('Gold Package'),
+                                SizedBox(width: 175),
+                                IconButton(
+                                  icon: const Icon(Icons.question_mark,size: 20,),
+                                  onPressed: () {
+                                    Navigator.push(context,
+                                        MaterialPageRoute(builder: (context)=>  Goldpackagepage())
+                                    );
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                              children: [
+                                Text('Sliver Package'),
+                                SizedBox(width: 170),
+                                IconButton(
+                                  icon: const Icon(Icons.question_mark,size: 20,),
+                                  onPressed: () {
+                                    Navigator.push(context,
+                                        MaterialPageRoute(builder: (context)=>  Sliverpackagepage())
+                                    );
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
+                          child: Text('Customer Review Rating'),
+                        ),
+                      ],
+                    ),
                   ),
-                  const Divider(
-                    indent: 20,
-                    endIndent: 20,
-                    color: Colors.black,
-                  ),
-                  Padding(
-                      padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
-                      child: Row(
-                        children: [
-                          Text('Sliver Package'),
-                          SizedBox(width: 170),
-                          IconButton(
-                            icon: const Icon(Icons.question_mark,size: 20,),
-                            onPressed: () {},
+                  Container(
+                    width: 370,
+                    height: 505,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border(top: BorderSide.none),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0x19000000),
+                          blurRadius: 10,
+                          offset: Offset(0, 4),
+                        ),
+                      ],
+                      color: Colors.white,
+                    ),
+                    child:
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 20,bottom:10,right: 20,top: 10 ),
+                          child:Container(
+                              width: 350,
+                              height: 200,
+
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(5), bottomLeft: Radius.circular(0), bottomRight: Radius.circular(5), ),
+                                border: Border.all(color: Color(0xffe5e5e5), width: 1, ),
+                                color: Color(0xff707070),
+                              ),
+                              child:Center(
+                                  child:Text(
+                                    "Solar Inertia",
+
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 45,
+
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )
+                              )
                           ),
-                        ],
-                      )
+                        ),
 
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text("3242"),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text('400'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
+                          child: Text('15'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Icon(Icons.check),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Radio<SingingCharacter>(
+                                  value: SingingCharacter.platinum,
+                                  groupValue: _character,
+                                  fillColor:
+                                  MaterialStateColor.resolveWith((states) => Colors.black),
+                                  onChanged: (SingingCharacter? value) {
+                                    setState(() {
+                                      _character = value;
+                                    });
+                                  },
+                                ),
+                              ]
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Radio<SingingCharacter>(
+                                  value: SingingCharacter.gold,
+                                  groupValue: _character,
+                                  fillColor:
+                                  MaterialStateColor.resolveWith((states) => Colors.black),
+                                  onChanged: (SingingCharacter? value) {
+                                    setState(() {
+                                      _character = value;
+                                    });
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Radio<SingingCharacter>(
+                                  value: SingingCharacter.sliver,
+                                  fillColor:
+                                  MaterialStateColor.resolveWith((states) => Colors.black),
+                                  groupValue: _character,
+                                  onChanged: (SingingCharacter? value) {
+                                    setState(() {
+                                      _character = value;
+                                    });
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
+                          child: Column(
+
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.min,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.star,color: Color(0xfff9bf00),),
+                                  Icon(Icons.star,color: Color(0xfff9bf00),),
+                                  Icon(Icons.star,color: Color(0xfff9bf00),),
+                                  Icon(Icons.star,color: Color(0xfff9bf00),),
+                                  Icon(Icons.star_half,color: Color(0xfff9bf00),),
+
+                                ],
+                              ),
+                              Text("5 Reviews",style: TextStyle(fontSize: 15),)
+                            ],
+                            
+                          )
+                        ),
+                      ],
+                    ),
                   ),
-                  const Divider(
-                    indent: 20,
-                    endIndent: 20,
-                    color: Colors.black,
+                  Container(
+                    width: 370,
+                    height: 505,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border(top: BorderSide.none),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0x19000000),
+                          blurRadius: 10,
+                          offset: Offset(0, 4),
+                        ),
+                      ],
+                      color: Colors.white,
+                    ),
+                    child:
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 20,bottom:10,right: 20,top: 10 ),
+                          child:Container(
+                              width: 350,
+                              height: 200,
+
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(5), bottomLeft: Radius.circular(0), bottomRight: Radius.circular(5), ),
+                                border: Border.all(color: Color(0xffe5e5e5), width: 1, ),
+                                color: Color(0xff707070),
+                              ),
+                              child:Center(
+                                  child:Text(
+                                    "Loom Solar",
+
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 45,
+
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )
+                              )
+                          ),
+                        ),
+
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text("3242"),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text('400'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
+                          child: Text('15'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Icon(Icons.check),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Radio<SingingCharacter>(
+                                    value: SingingCharacter.platinum,
+                                    groupValue: _character,
+                                    fillColor:
+                                    MaterialStateColor.resolveWith((states) => Colors.black),
+                                    onChanged: (SingingCharacter? value) {
+                                      setState(() {
+                                        _character = value;
+                                      });
+                                    },
+                                  ),
+                                ]
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Radio<SingingCharacter>(
+                                  value: SingingCharacter.gold,
+                                  groupValue: _character,
+                                  fillColor:
+                                  MaterialStateColor.resolveWith((states) => Colors.black),
+                                  onChanged: (SingingCharacter? value) {
+                                    setState(() {
+                                      _character = value;
+                                    });
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Radio<SingingCharacter>(
+                                  value: SingingCharacter.sliver,
+                                  fillColor:
+                                  MaterialStateColor.resolveWith((states) => Colors.black),
+                                  groupValue: _character,
+                                  onChanged: (SingingCharacter? value) {
+                                    setState(() {
+                                      _character = value;
+                                    });
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
+                            child: Column(
+
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.star,color: Color(0xfff9bf00),),
+                                    Icon(Icons.star,color: Color(0xfff9bf00),),
+                                    Icon(Icons.star,color: Color(0xfff9bf00),),
+                                    Icon(Icons.star,color: Color(0xfff9bf00),),
+                                    Icon(Icons.star_half,color: Color(0xfff9bf00),),
+
+                                  ],
+                                ),
+                                Text("5 Reviews",style: TextStyle(fontSize: 15),)
+                              ],
+
+                            )
+                        ),
+                      ],
+                    ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
-                    child: Text('Customer Review Rating'),
-                  ),
-              ],
-              ),
+                  Container(
+                    width: 370,
+                    height: 505,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border(top: BorderSide.none),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0x19000000),
+                          blurRadius: 10,
+                          offset: Offset(0, 4),
+                        ),
+                      ],
+                      color: Colors.white,
+                    ),
+                    child:
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 20,bottom:10,right: 20,top: 10 ),
+                          child:Container(
+                              width: 350,
+                              height: 200,
+
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(5), bottomLeft: Radius.circular(0), bottomRight: Radius.circular(5), ),
+                                border: Border.all(color: Color(0xffe5e5e5), width: 1, ),
+                                color: Color(0xff707070),
+                              ),
+                              child:Center(
+                                  child:Text(
+                                    "Ind Mart",
+
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 45,
+
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  )
+                              )
+                          ),
+                        ),
+
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text("3242"),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Text('400'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
+                          child: Text('15'),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30,bottom:10,right: 30,top: 10 ),
+                          child: Icon(Icons.check),
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Radio<SingingCharacter>(
+                                    value: SingingCharacter.platinum,
+                                    groupValue: _character,
+                                    fillColor:
+                                    MaterialStateColor.resolveWith((states) => Colors.black),
+                                    onChanged: (SingingCharacter? value) {
+                                      setState(() {
+                                        _character = value;
+                                      });
+                                    },
+                                  ),
+                                ]
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Radio<SingingCharacter>(
+                                  value: SingingCharacter.gold,
+                                  groupValue: _character,
+                                  fillColor:
+                                  MaterialStateColor.resolveWith((states) => Colors.black),
+                                  onChanged: (SingingCharacter? value) {
+                                    setState(() {
+                                      _character = value;
+                                    });
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:0,right: 30 ,top: 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Radio<SingingCharacter>(
+                                  value: SingingCharacter.sliver,
+                                  fillColor:
+                                  MaterialStateColor.resolveWith((states) => Colors.black),
+                                  groupValue: _character,
+                                  onChanged: (SingingCharacter? value) {
+                                    setState(() {
+                                      _character = value;
+                                    });
+                                  },
+                                ),
+                              ],
+                            )
+
+                        ),
+                        const Divider(
+                          indent: 20,
+                          endIndent: 20,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 30,bottom:10,right: 30 ,top: 10),
+                            child: Column(
+
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.star,color: Color(0xfff9bf00),),
+                                    Icon(Icons.star,color: Color(0xfff9bf00),),
+                                    Icon(Icons.star,color: Color(0xfff9bf00),),
+                                    Icon(Icons.star,color: Color(0xfff9bf00),),
+                                    Icon(Icons.star_half,color: Color(0xfff9bf00),),
+
+                                  ],
+                                ),
+                                Text("5 Reviews",style: TextStyle(fontSize: 15),)
+                              ],
+
+                            )
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              )
+
+
       ),
               SizedBox(height: 40,),
               Padding(

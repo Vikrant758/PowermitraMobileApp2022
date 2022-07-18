@@ -1,5 +1,5 @@
 android.content.res.Resources#getIdentifier present: true
-Web content present: false
+Web content present: true
 Referenced Strings:
 exception
 DISMISS
@@ -24,10 +24,10 @@ androidx.window.layout.WindowInfoTrac...
 ActivityRule
 click
 0
-kotlin.jvm.functions.
 left
-WindowInfoTrackerImpl.kt
+kotlin.jvm.functions.
 kotlinx.coroutines.DefaultExecutor
+WindowInfoTrackerImpl.kt
 TextInputClient.updateEditingStateWit...
 registerWith
 SystemSoundType.alert
@@ -82,15 +82,17 @@ deviceState
 decimal
 SystemChrome.setSystemUIOverlayStyle
 TextInput.setEditableSizeAndTransform
-COMPLETING_WAITING_CHILDREN
 enable_state_restoration
+COMPLETING_WAITING_CHILDREN
 ClassVerificationFailure
 _invoked
 locale
 SET_SELECTION
+plugins.flutter.io/url_launcher_android
 _delayed
 android.os.Build
 io.flutter.embedding.android.OldGenHe...
+headers
 BITMAP_MASKABLE
 MOVE_CURSOR_BACKWARD_BY_CHARACTER
 FlutterSplashView
@@ -205,11 +207,11 @@ kotlin.Throwable
 sidecarDisplayFeatures
 parkedWorkersStack
 IS_IMAGE
-COMPLETING_ALREADY
 PHONE
+COMPLETING_ALREADY
 systemNavigationBarColor
-cause
 displayCutout
+cause
 PlatformPlugin
 java.lang.Iterable
 rect
@@ -220,6 +222,8 @@ synchronizeToNativeViewHierarchy
 packageName
 LANDSCAPE_LEFT
 info.displayFeatures
+enableJavaScript
+OK
 direction
 BITMAP
 windowConfiguration
@@ -266,6 +270,7 @@ PROTECTED
 STANDARD
 cached_engine_id
 setRemoveOnCancelPolicy
+NO_ACTIVITY
 newLayoutInfo
 IS_LIVE_REGION
 forbidden
@@ -311,8 +316,8 @@ DartExecutor
 fields
 getDescriptor
 keymap
-string
 FlutterLoader
+string
 deltaStart
 onRequestPermissionsResult
 kotlin.coroutines.jvm.internal.BaseCo...
@@ -324,8 +329,8 @@ EDGE_TO_EDGE
 description
 LEAN_BACK
 _isTerminated
-SEALED
 LifecycleChannel
+SEALED
 textScaleFactor
 CREATED
 namePrefix
@@ -340,6 +345,7 @@ DATETIME
 primitiveFqNames.values
 enableSuggestions
 PASTE
+android.intent.action.VIEW
 short
 middleName
 window
@@ -360,8 +366,8 @@ textCapitalization
 oemFeature
 getBounds
 put
-EmptyCoroutineContext
 TextInputType.text
+EmptyCoroutineContext
 CPU_ACQUIRED
 ACTION_ARGUMENT_SELECTION_END_INT
 embeddingCallback
@@ -380,6 +386,7 @@ POSTAL_ADDRESS
 smsOTPCode
 SystemChannel
 flutter_deeplinking_enabled
+com.android.browser.headers
 viewFocused
 HEAVY_IMPACT
 light
@@ -391,6 +398,7 @@ RETRY_ATOMIC
 getDisplayFeatures
 BLOCKING
 uninstallDeferredComponent
+UrlLauncherPlugin
 java.lang.Throwable
 Dispatchers.Unconfined
 WindowInfoTrackerCallbackAdapter.kt
@@ -451,6 +459,7 @@ job
 TextInputClient.requestExistingInputS...
 setLocale
 Clipboard.setData
+closeWebView
 TextInput.sendAppPrivateCommand
 TextInputType.phone
 SET_TEXT
@@ -479,8 +488,8 @@ $splitRule
 getModule
 extent
 sidecarCompat
-java.specification.version
 resizeColumn
+java.specification.version
 plugins
 kotlinx.coroutines.scheduler.blocking...
 kotlin.Cloneable
@@ -489,8 +498,8 @@ IS_FOCUSED
 PlatformViewsController
 ReceiveQueued
 systemStatusBarContrastEnforced
-kotlin.reflect.jvm.internal.Reflectio...
 getSuppressed
+kotlin.reflect.jvm.internal.Reflectio...
 PARKING
 FOLD
 DartMessenger
@@ -516,8 +525,8 @@ resizeUpDown
 background_mode
 popRoute
 NAMES_ROUTE
-defaultDisplay
 throwableMethods
+defaultDisplay
 completion
 clearFocus
 secondaryActivityIntent
@@ -566,6 +575,7 @@ secondaryActivity
 kotlin.collections.Map
 ENQUEUE_FAILED
 statusBarColor
+useWebView
 java.lang.Boolean
 continuation
 DISABLE_ANIMATIONS
@@ -587,6 +597,7 @@ DEFAULT
 setInitialRoute
 TextInputAction.next
 DROP_OLDEST
+MethodCallHandlerImpl
 splitInfoList
 TEXT
 lastScheduledTask
@@ -636,6 +647,7 @@ personNameSuffix
 kotlin.jvm.functions.Function
 EmbeddingCompat
 off
+url
 resizeLeftRight
 platformBrightness
 splitInfo.secondaryActivityStack
@@ -646,8 +658,8 @@ io.flutter.EntrypointUri
 onSaveInstanceState
 mH
 IS_SLIDER
-newIndent
 loadingUnitId
+newIndent
 resizeUpLeftDownRight
 KeyboardManager
 RESUMED
@@ -713,8 +725,8 @@ EMAIL_ADDRESS
 java.lang.Long
 metaState
 java.util.Map
-INTERNAL
 TextInputPlugin
+INTERNAL
 height
 CUT
 BOTTOM_OVERLAYS
@@ -731,8 +743,8 @@ kotlin.Function
 RTL
 long
 SystemUiMode.immersive
-kotlinx.coroutines.channels.defaultBu...
 HALF_OPENED
+kotlinx.coroutines.channels.defaultBu...
 activity.windowManager.currentWindowM...
 $this$$receiver
 key
@@ -747,6 +759,7 @@ texture
 WORDS
 SELECTION_CLICK
 windowMetricsCalculator
+launch
 kotlin.Float
 systemNavigationBarIconBrightness
 contextMenu
@@ -768,6 +781,7 @@ rules
 personGivenName
 pairs
 TextInput.setEditingState
+enableDomStorage
 ON_START
 birthDateFull
 windowMetrics.bounds
@@ -853,6 +867,7 @@ IS_TOGGLED
 feature
 NO_THREAD_ELEMENTS
 get
+canLaunch
 oneTimeCode
 tracker
 dark
@@ -867,12 +882,14 @@ newLayout
 DARK
 COPY
 IS_READ_ONLY
-token
 initializer
+token
 SystemChrome.setPreferredOrientations
 filter
+ACTIVITY_NOT_FOUND
 help
 phoneNumberDevice
+UrlLauncher
 flutter/deferredcomponent
 elements
 java.lang.Comparable
@@ -983,6 +1000,9 @@ Marking id:accessibility_custom_action_7:2131034142 used because it matches stri
 Marking id:accessibility_custom_action_8:2131034143 used because it matches string pool constant acc
 Marking id:accessibility_custom_action_9:2131034144 used because it matches string pool constant acc
 Marking id:locale:2131034162 used because it matches string pool constant locale
+Marking id:locale:2131034162 used because it matches string pool constant locale
+Marking attr:secondaryActivityName:2130771991 used because it matches string pool constant secondaryActivityName.className
+Marking id:info:2131034158 used because it matches string pool constant info.displayFeatures
 Marking id:accessibility_action_clickable_span:2131034112 used because it matches string pool constant accessibility
 Marking id:accessibility_custom_action_0:2131034113 used because it matches string pool constant accessibility
 Marking id:accessibility_custom_action_1:2131034114 used because it matches string pool constant accessibility
@@ -1017,11 +1037,16 @@ Marking id:accessibility_custom_action_7:2131034142 used because it matches stri
 Marking id:accessibility_custom_action_8:2131034143 used because it matches string pool constant accessibility
 Marking id:accessibility_custom_action_9:2131034144 used because it matches string pool constant accessibility
 Marking attr:primaryActivityName:2130771988 used because it matches string pool constant primaryActivityName
+Marking attr:primaryActivityName:2130771988 used because it matches string pool constant primaryActivityName
 Marking color:androidx_core_ripple_material_light:2130837504 used because it matches string pool constant android
 Marking color:androidx_core_secondary_text_default_material_light:2130837505 used because it matches string pool constant android
 Marking id:androidx_window_activity_scope:2131034150 used because it matches string pool constant android
 Marking attr:shortcutMatchRequired:2130771992 used because it matches string pool constant short
+Marking attr:primaryActivityName:2130771988 used because it matches string pool constant primaryActivityName.packageName
+Marking attr:primaryActivityName:2130771988 used because it matches string pool constant primaryActivityName.className
 Marking attr:secondaryActivityName:2130771991 used because it matches string pool constant secondaryActivityName
+Marking attr:secondaryActivityName:2130771991 used because it matches string pool constant secondaryActivityName
+Marking id:info:2131034158 used because it matches string pool constant info
 Marking id:info:2131034158 used because it matches string pool constant info
 Marking attr:primaryActivityName:2130771988 used because it matches string pool constant primaryActivity
 Marking attr:secondaryActivityAction:2130771990 used because it matches string pool constant secondaryActivity
@@ -1032,9 +1057,12 @@ Marking id:action_image:2131034147 used because it matches string pool constant 
 Marking id:action_text:2131034148 used because it matches string pool constant action
 Marking id:actions:2131034149 used because it matches string pool constant action
 Marking id:text:2131034184 used because it matches string pool constant text
+Marking id:text:2131034184 used because it matches string pool constant text
 Marking id:text2:2131034185 used because it matches string pool constant text
 Marking attr:activityAction:2130771968 used because it matches string pool constant activity
 Marking attr:activityName:2130771969 used because it matches string pool constant activity
+Marking attr:secondaryActivityName:2130771991 used because it matches string pool constant secondaryActivityName.packageName
+Marking drawable:launch_background:2130968576 used because it matches string pool constant launch
 Marking id:line1:2131034160 used because it matches string pool constant line
 Marking id:line3:2131034161 used because it matches string pool constant line
 @attr/activityAction : reachable=true
@@ -1095,7 +1123,7 @@ Marking id:line3:2131034161 used because it matches string pool constant line
 @dimen/notification_subtext_size : reachable=false
 @dimen/notification_top_pad : reachable=false
 @dimen/notification_top_pad_large_text : reachable=false
-@drawable/launch_background : reachable=false
+@drawable/launch_background : reachable=true
 @drawable/notification_action_background : reachable=false
     @color/androidx_core_ripple_material_light
     @dimen/compat_button_inset_horizontal_material
@@ -1253,6 +1281,7 @@ The root reachable resources are:
  attr:shortcutMatchRequired:2130771992
  color:androidx_core_ripple_material_light:2130837504
  color:androidx_core_secondary_text_default_material_light:2130837505
+ drawable:launch_background:2130968576
  id:accessibility_action_clickable_span:2131034112
  id:accessibility_custom_action_0:2131034113
  id:accessibility_custom_action_1:2131034114

@@ -242,7 +242,7 @@ class _CalculationState extends State<Calculation> {
                           children: [
                             Padding(padding: EdgeInsets.all(10)),
                             SizedBox(height: 40,),
-                            Text("No of Avg Units Consumed(KWH)",style: TextStyle(color: Colors.white),)
+                            Text("No of Average monthly bill paid ₹",style: TextStyle(color: Colors.white),)
                           ],
 
                         ),
@@ -354,7 +354,7 @@ class _CalculationState extends State<Calculation> {
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     SizedBox(
                                       width: 290,
@@ -393,7 +393,7 @@ class _CalculationState extends State<Calculation> {
                           child: SizedBox(
                             width: 345,
                             child: Text(
-                              "Total cost (INR)                 : Rs. 400,000",
+                              "Total cost ₹                        : Rs. 400,000",
                               style: TextStyle(
                                 color: Color(0xff010f2e),
                                 fontSize: 18,
@@ -466,7 +466,7 @@ class _CalculationState extends State<Calculation> {
                                 SizedBox(
                                   width: 179,
                                   child: Text(
-                                    "Monthly saved (INR)",
+                                    "Monthly saved ₹",
                                     style: TextStyle(
                                       color: Color(0xff010f2e),
                                       fontSize: 15,
@@ -496,7 +496,7 @@ class _CalculationState extends State<Calculation> {
                                 SizedBox(
                                   width: 179,
                                   child: Text(
-                                    "Monthly saved (INR)",
+                                    "Monthly saved ₹",
                                     style: TextStyle(
                                       color: Color(0xff010f2e),
                                       fontSize: 15,
@@ -619,7 +619,7 @@ class _CalculationState extends State<Calculation> {
                                 SizedBox(
                                   width: 177,
                                   child: Text(
-                                    "Monthly saved (INR)",
+                                    "Monthly saved ₹",
                                     style: TextStyle(
                                       color: Color(0xff010f2e),
                                       fontSize: 15,
